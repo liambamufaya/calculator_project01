@@ -37,10 +37,16 @@ class Calculator:
         raise NotImplementedError("Square root function not implemented yet")
     
     # Student 6: Power function
+    # Student 6: Power function
     def power(self, base, exponent):
-        # TODO: Implement power functionality
-        raise NotImplementedError("Power function not implemented yet")
-    
+        try:
+            result = base ** exponent
+            self.result = result
+            operation = f"{base} ^ {exponent} = {result}"
+            self.add_to_history(operation)  # Record operation in history
+            return result
+        except Exception as e:
+            return f"Error: {e}"
     # Student 7: Percentage function
     def percentage(self, value, total):
         # TODO: Implement percentage functionality
