@@ -13,10 +13,14 @@ class Calculator:
         raise NotImplementedError("Addition function not implemented yet")
     
     # Student 2: Subtraction function
+   # Student 2: Subtraction function
     def subtract(self, a, b):
-        # TODO: Implement subtraction functionality  
-        raise NotImplementedError("Subtraction function not implemented yet")
-    
+        
+        difference = a - b
+        self.result = difference
+        operation = f"{a} - {b} = {difference}"
+        self.add_to_history(operation) # Call the history method (once implemented)
+        return difference
     # Student 3: Multiplication function
     def multiply(self, a, b):
     
