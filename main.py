@@ -9,8 +9,10 @@ class Calculator:
     # PLACEHOLDER METHODS - Empty or with basic implementation
     # Student 1: Addition function
     def add(self, a, b):
-        # TODO: Implement addition functionality
-        raise NotImplementedError("Addition function not implemented yet")
+        """Return the sum of two numbers and update result and history."""
+        self.result = a + b
+        self.add_to_history(f"Added {a} + {b} = {self.result}")
+        return self.result
     
     # Student 2: Subtraction function
    # Student 2: Subtraction function
