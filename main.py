@@ -37,7 +37,16 @@ class Calculator:
     def square_root(self, a):
         # TODO: Implement square root functionality
         raise NotImplementedError("Square root function not implemented yet")
-    
+    import math
+
+# Ask user for input
+num = float(input("Enter a number: "))
+
+# Calculate the square root
+sqrt = math.sqrt(num)
+
+# Display the result
+print(f"The square root of {num} is {sqrt}")
     # Student 6: Power function
     def power(self, base, exponent):
         # TODO: Implement power functionality
