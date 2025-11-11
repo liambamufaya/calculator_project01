@@ -9,8 +9,10 @@ class Calculator:
     # PLACEHOLDER METHODS - Empty or with basic implementation
     # Student 1: Addition function
     def add(self, a, b):
-        # TODO: Implement addition functionality
-        raise NotImplementedError("Addition function not implemented yet")
+        """Return the sum of two numbers and update result and history."""
+        self.result = a + b
+        self.add_to_history(f"Added {a} + {b} = {self.result}")
+        return self.result
     
     # Student 2: Subtraction function
    # Student 2: Subtraction function
@@ -35,12 +37,27 @@ class Calculator:
     def square_root(self, a):
         # TODO: Implement square root functionality
         raise NotImplementedError("Square root function not implemented yet")
-    
+    import math
+
+# Ask user for input
+num = float(input("Enter a number: "))
+
+# Calculate the square root
+sqrt = math.sqrt(num)
+
+# Display the result
+print(f"The square root of {num} is {sqrt}")
+    # Student 6: Power function
     # Student 6: Power function
     def power(self, base, exponent):
-        # TODO: Implement power functionality
-        raise NotImplementedError("Power function not implemented yet")
-    
+        try:
+            result = base ** exponent
+            self.result = result
+            operation = f"{base} ^ {exponent} = {result}"
+            self.add_to_history(operation)  # Record operation in history
+            return result
+        except Exception as e:
+            return f"Error: {e}"
     # Student 7: Percentage function
     def percentage(self, value, total):
         # TODO: Implement percentage functionality
