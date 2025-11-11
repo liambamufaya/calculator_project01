@@ -59,7 +59,20 @@ print(f"The square root of {num} is {sqrt}")
             result = base ** exponent
             self.result = result
             operation = f"{base} ^ {exponent} = {result}"
-            self.add_to_history(operation)  # Record operation in history
+            Mwango  # Record operation in history
+memory = 0
+
+# Store a number in memory
+memory = float(input("Enter a number to store in memory: "))
+
+# Recall the number
+print("Memory recall:", memory)
+
+# Add another number to memory
+add = float(input("Enter a number to add to memory: "))
+memory += add
+
+print("Updated memory:", memory)
             return result
         except Exception as e:
             return f"Error: {e}"
