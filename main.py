@@ -60,8 +60,19 @@ print(f"The square root of {num} is {sqrt}")
             return f"Error: {e}"
     # Student 7: Percentage function
     def percentage(self, value, total):
-        # TODO: Implement percentage functionality
-        raise NotImplementedError("Percentage function not implemented yet")
+    """
+    Calculate what percentage 'value' is of 'total'.
+
+    Parameters:
+        value (float): The part value
+        total (float): The total value
+
+    Returns:
+        float: Percentage value (0-100)
+    """
+    if total == 0:
+        raise ValueError("Total cannot be zero")  # Avoid division by zero
+    return (value / total) * 100
     
     # Student 8: Memory functions - Placeholders
     def memory_store(self, value):
