@@ -28,8 +28,9 @@ class Calculator:
     
     # Student 4: Division function
     def divide(self, a, b):
-        # TODO: Implement division functionality
-        raise NotImplementedError("Division function not implemented yet")
+    if b == 0:
+        raise ValueError("You cannot divide by zero.")
+    return a / b
     
     # Student 5: Square root function
     def square_root(self, a):
