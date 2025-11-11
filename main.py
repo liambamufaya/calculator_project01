@@ -97,7 +97,7 @@ print(f"The square root of {num} is {sqrt}")
         # TODO: Implement clear functionality
         pass
     
-    # Student 12: Trigonometric functions - Placeholders
+    # Michelo: Trigonometric functions - updated
     def sin(self, angle):
         # TODO: Implement sine function
         pass
