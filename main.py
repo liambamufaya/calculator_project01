@@ -23,9 +23,13 @@ class Calculator:
         operation = f"{a} - {b} = {difference}"
         self.add_to_history(operation) # Call the history method (once implemented)
         return difference
-    # Student 3: Multiplication function
+    # Student 3: Multiplication_giddel0001
     def multiply(self, a, b):
-    
+        product = a * b
+        self.result = product
+        operation = f"{a} * {b} = {product}"
+        self.add_to_history(operation)  # Log the operation to history
+        return product
         raise NotImplementedError("Multiplication function not implemented yet")
     
     # Student 4: Division function
