@@ -98,9 +98,10 @@ print(f"The square root of {num} is {sqrt}")
         pass
     
     # Michelo: Trigonometric functions - updated
-    def sin(self, angle):
-        # TODO: Implement sine function
-        pass
+    import math
+
+def sin(self, angle):
+    return math.sin(angle)
     
     def cos(self, angle):
         # TODO: Implement cosine function
